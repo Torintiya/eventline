@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jura";
+}
+
+@font-face {
+    font-family: "DaysOne";
+    src: url(font/DaysOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(font/Jura.ttf);
+}
+
+/* Кулибин */
+body {
+    background: rgb(22, 22, 22);
+    background-image: url(img/IMG_3175.png);
+    background-size: cover;
+}
+
+h2 {
+    font-family: "DaysOne";
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    position: fixed;
+    background: rgb(22, 22, 22);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(10, 10, 18, 0.5);
+}
+
+.header_wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.header_logo {
+    flex: 0 0 90px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.header_logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.header_burger {
+    display: none;
+}
+
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header_list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+
+.header_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.intro {
+    padding: 200px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.video_wrap {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1440px;
+    height: auto;
+    margin-left: -720px;
+    opacity: 0.4;
+}
+
+.intro_title {
+    max-width: 946px;
+    margin: 0 auto;
+    font-family: "DaysOne";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.intro_btn {
+    text-align: center;
+    position: relative;
+}
+
+.intro__btn {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    width: 147px;
+    height: 60px;
+    background-color: #688dbc;
+    border-radius: 10px;
+    border: none;
+    margin-top: 70px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.intro__btn:hover {
+    background-color: #5b4de4;
+    color: #01ffff;
+    border-radius: 30px;
+}
+
+.messenger_btn {
+    border: none;
+    height: 50px;
+    width: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 100;
+    background: no-repeat url("./img/Icon.svg");
+    background-color: #688dbc;
+    background-position: center;
+    background-size: 70%;
+}
+
+.about_wrap {
+    max-height: 550px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_img {
+    height: auto;
+    min-width: 360px;
+    width: 50%;
+    border-radius: 30px;
+    position: relative;
+    top: -50px;
+    left: 25px;
+}
+
+.about__img {
+    max-width: 100%;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+
+.about__img:hover {
+    transform: scale(1.3);
+}
+
+.about_content {
+    font-family: "DaysOne";
+    font-size: 26px;
+    height: auto;
+    min-width: 360px;
+    width: 50%;
+    color: #ffffff;
+    background: linear-gradient(
+            144.89deg,
+            rgba(10, 10, 18, 0.7) 0%,
+            rgba(58, 77, 105, 0.7) 42.05%,
+            rgba(233, 210, 183, 0.7) 100%
+    ),
+    rgba(10, 10, 18, 0.781);
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+    left: -25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_text {
+    font-family: "Jura";
+    margin: 0 32px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Кулибин end */
+
+/* Ilya_start */
+.formP {
+    visibility: visible;
+    position: relative;
+    z-index: 5;
+    display: none;
+}
+
+.formBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(28.5px);
+}
+
+.window-form {
+    position: fixed;
+    width: 550px;
+    height: 690px;
+    max-width: 100%;
+    background: linear-gradient(
+            144.89deg,
+            rgba(10, 10, 18, 0.7) 0%,
+            rgba(58, 77, 105, 0.7) 42.05%,
+            rgba(233, 210, 183, 0.7) 100%
+    ),
+    rgba(0, 0, 0, 0.137);
+    backdrop-filter: blur(28.5px);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.close-button {
+    display: block;
+    width: 30px;
+    max-width: 100%;
+    height: 30px;
+    max-height: 100%;
+    margin-right: 2%;
+    margin-top: 2%;
+
+    background-color: transparent;
+    border: none;
+    background-image: url("./img/closeBut.svg");
+
+    cursor: pointer;
+}
+
+form > fieldset {
+    padding: 7px 13px;
+}
+
+.form-box,
+.complete-form-box {
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.complete-form-box {
+    display: none;
+}
+
+.formTitle {
+    width: 80%;
+    padding-bottom: 2%;
+}
+
+.formTitle h1 {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.formTitle h2 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Jura";
+}
+
+.QA-forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    align-items: center;
+}
+
+#checkLabelText {
+    text-align: center;
+    width: 80%;
+}
+
+#checkLabelText input {
+    display: inline;
+    width: auto;
+}
+
+.QA-forma label,
+fieldset {
+    display: block;
+    text-align: left;
+    width: 60%;
+    height: 10%;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.polConfDiv {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+legend {
+    display: inline-block;
+    margin-left: -1%;
+}
+
+.QA-forma input[type="text"],
+.QA-forma input[type="email"],
+.QA-forma input[type="tel"] {
+    display: block;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+#acceptBtnForm {
+    width: 60%;
+    height: 15%;
+    border: none;
+    background: #688dbc;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+#acceptBtnForm:hover {
+    box-shadow: 0px 0px 10px rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+#acceptBtnForm:active {
+    border: none;
+    background-color: #626262;
+}
+
+#closeBtnFormDiv {
+    padding-top: 10%;
+    width: 30%;
+    height: 10%;
+}
+
+#closeBtnForm {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #688dbc;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    color: white;
+}
+
+#closeBtnForm:hover {
+    box-shadow: 0px 0px 10px rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+#closeBtnForm:active {
+    border: none;
+    background-color: #626262;
+}
+
+.polConfDiv {
+    background-color: transparent;
+    border: none;
+    font-family: "Jura";
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+}
+
+#polConf {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Ilya end */
+
+/* Vika start */
+
+.wrap_advantages {
+    padding-top: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.title_advantages {
+    font-family: "DaysOne";
+    height: 38px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.content_wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.content_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.content_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.wrap_portfolio {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    font-family: "DaysOne";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 80px;
+    letter-spacing: 2px;
+}
+
+.foto {
+    margin-top: 80px;
+    margin-left: 14px;
+}
+
+.foto_bottom {
+    margin-bottom: 14px;
+}
+
+.foto_top {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto_right {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 14px;
+}
+
+.foto_bigger,
+.foto_small {
+    border-radius: 30px;
+    transition: transform 0.6s;
+}
+
+.foto_margin {
+    margin-right: 14px;
+}
+
+.link {
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 22px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+}
+
+.foto_bigger:hover {
+    transform: scale(1.3);
+}
+
+.foto_small:hover {
+    transform: scale(1.5);
+}
+
+.link:hover {
+    color: #688dbc;
+}
+
+.mySwiper {
+    display: none;
+}
+
+.slide_link {
+    display: none;
+}
+
+/*----------------------------------------------- Vika end ----------------------------------------------------------*/
+
+
+/* ------------------------------------------------Nikitin end ------------------------------------------------------*/
+/*-----------------------------------------------GALINA START------------------------------------------------------*/
+.container_footer {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: "Jura";
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.footer_blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__block {
+    display: flex;
+    height: 40px;
+}
+
+.logo {
+    height: auto;
+    width: 70%;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+.list {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer___text {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+.policy {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px 0px;
+}
+
+.footer___img {
+    width: 24px;
+    height: auto;
+}
+
+.footer___img_sn {
+    margin-right: 24px;
+}
+
+/*-----------------------------------------------GALINA START--------------------------------------*/
+
+/* Politika_ */
+.politika_link {
+    position: absolute;
+    left: 5%;
+    top: -50px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: 400;
+}
+
+.politika_link:hover {
+    color: #688DBC;
+    text-decoration-line: underline;
+}
+
+.politika_title {
+    text-align: center;
+    margin: 160px 0 20px 0;
+    font-family: "DaysOne";
+    font-size: 36px;
+    line-height: 46px;
+    font-style: 400;
+    color: #e9d2b7;
+}
+
+.politika_box {
+    max-width: 1140px;
+    margin: 40px auto;
+    background: linear-gradient(
+            144.89deg,
+            rgba(10, 10, 18, 0.26) 0%,
+            rgba(58, 77, 105, 0.26) 42.05%,
+            rgba(233, 210, 183, 0.26) 100%
+    ),
+    rgba(10, 10, 18, 0.37);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.politika_text {
+    width: 740px;
+    margin: 0 auto;
+    color: #ffffff;
+    /* text-align: justify; */
+    font-family: "Jura";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.indent {
+    padding-top: 30px;
+}
+
+/* Politika_ */

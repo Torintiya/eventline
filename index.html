@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EventLine</title>
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script defer src="./js/script.js"></script>
+	<script defer src="./js/OpenClose.js"></script>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/media-adapt.css" />
+</head>
+<!----------------------------------------------------------КулибинSTART--------------------------------------------->
+
+<body>
+	<header class="header">
+		<div class="header_wrap">
+			<div class="header_body">
+				<a href="#video_Wrapper" class="header_logo">
+					<img src="img/Logotype.png" alt="" />
+				</a>
+				<div class="header_burger">
+					<span></span>
+				</div>
+				<nav class="header_menu">
+					<ul class="header_list">
+						<li>
+							<a href="#video_Wrapper" class="header_link">Главная</a>
+						</li>
+						<li>
+							<a href="#about_us" class="header_link">О нас</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="header_link">Портфолио</a>
+						</li>
+						<li>
+							<a href="#service_wrapper" class="header_link">Услуги</a>
+						</li>
+						<li>
+							<a href="#footer" class="header_link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<button id="openButton" class="messenger_btn"></button>
+
+		<div class="header_wrap contacts">
+			<a class="contacts_link" href="#"> &#129120; Вернуться на Главную </a>
+			<h2 class="contacts_title">Контактная информация</h2>
+
+			<div class="contacts_adaptiv">
+				<div class="contacts_info">
+					<div class="contacts_block">
+						<img class="contacts_icon" src="img/icon1.svg">
+						<ul class="contacts_list">
+							<li class="list_item">Адрес</li>
+							<li class="list_item">г. Таганрог, ул. Заводская 20-3</li>
+						</ul>
+					</div>
+
+					<div class="contacts_block block">
+						<img class="contacts_icon" src="img/icon2.svg">
+						<ul class="contacts_list">
+							<li class="list_item">E-mail</li>
+							<li class="list_item">info@eventline.pro</li>
+						</ul>
+					</div>
+
+					<div class="contacts_block">
+						<img class="contacts_icon" src="img/icon3.svg">
+						<ul class="contacts_list">
+							<li class="list_item">Контактный телефон</li>
+							<li class="list_item">8-000-000-00-00</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contacts_map">
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6771fad15d5fb0c6318022c6e22a719a27996d1cae808e314caa4915ef5797fe&amp;width=100%25&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+			</div>
+		</div>
+
+		<!--------------------------------------------------IlyaSTART------------------------------------------------------>
+		<section id="fomPage" class="formP">
+			<div class="formBack">
+				<div class="window-form">
+					<button id="closeButton" class="close-button"></button>
+					<div id="formBox" class="form-box">
+						<div class="formTitle">
+							<h1>У вас остались вопросы?</h1>
+							<h2>
+								Заполните форму ниже и мы свяжемся с вами в ближайшее время
+							</h2>
+						</div>
+						<form id="QAforma" name="QAforma" class="QA-forma" action="" method="POST">
+							<fieldset>
+								<legend>Имя</legend>
+								<input id="nameForm" type="text" placeholder="Анна" required name="user_name" />
+							</fieldset>
+
+							<fieldset>
+								<legend>Email</legend>
+								<input id="emailForma" type="email" placeholder="example@gmail.com" required
+									name="user_email" />
+							</fieldset>
+
+							<fieldset>
+								<legend>Мобильный телефон</legend>
+								<input id="telForma" type="tel" minlength="7" placeholder="+7(999)123-45-67" required
+									name="user_phone" />
+							</fieldset>
+							<div class="polConfDiv">
+								<label id="checkLabelText" for="checkboxForma">
+									<input id="checkboxForma" type="checkbox" required />
+									Я согласен (а) на обработку персональных данных в соответствии
+								</label>
+								<p><a id="polConf" href="./politika.html">Политикой конфиденциальности</a></p>
+							</div>
+							<input type="submit" id="acceptBtnForm" value="Отправить заявку" />
+						</form>
+					</div>
+					<div id="completeBox" class="complete-form-box">
+						<div class="formTitle">
+							<h1>Спасибо! ваша заявка принята</h1>
+							<h2>Мы свяжемся с вами в ближайшее время</h2>
+						</div>
+						<div id="closeBtnFormDiv">
+							<button id="closeBtnForm" type="submit">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------------------------------------------- IlyaEND ------------------------------------------------------>
+
+	</main>
+
+	<!---------------------------------------------GALINASTART-------------------------------------------------------->
+	<footer class="footer" id="footer">
+		<div class="container_footer">
+			<div class="footer_blocks">
+				<div class="footer__block">
+					<ul id="" class="list">
+						<li><img class="logo" src="./img/Logotype.png" alt="logo"></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="list">
+						<li class="footer__block" id="maps_modal">
+							<img class="footer___img" src="./img/geo.svg" alt="geolocation">
+							<a class="footer___text" href="#">г. Таганрог, ул. Заводская, 20-3</a>
+						</li>
+						<li class="footer__block">
+							<img class="footer___img" src="./img/mail.svg" alt="email">
+							<a class="footer___text" href="mailto:sff08@yandex.com">sff08@yandex.com</a>
+						</li>
+						<li class=" footer__block">
+							<img class="footer___img" src="./img/phone.svg" alt="phone">
+							<a class="footer___text" href="tel:+79185369230">8-918-536-92-30</a>
+						</li>
+						<li class="footer__block">
+							<div class="logo_links">
+								<a href="https://t.me/+fzvFY16tQCw1OGQy" target="_blank"><img
+										class="footer___img_sn vk_img" src="./img/telegram_static.svg"
+										onmouseover="this.src='./img/telegram_hover.svg'"
+										onmouseout="this.src='./img/telegram_static.svg'" alt="telegram"></a>
+								<a href="https://vk.com/el_eventline" target="_blank"><img
+										class="footer___img_sn telegram_img" src="./img/vk_static.svg"
+										onmouseover="this.src='./img/vk_hover.svg'"
+										onmouseout="this.src='./img/vk_static.svg'" alt="vkontakte">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="list">
+				<li><a class="footer___text policy" href="./polConf.html">Политика конфиденциальности</a></li>
+				<li><a class="footer___text policy next" href="#">© 2023 ИП Федосов Максим Сергеевич</a></li>
+			</ul>
+		</div>
+	</footer>
+	<!---------------------------------------------GALINAEND------------------------------------------------------->
+	<script src="https://use.fontawesome.com/67c14b2fbc.js"></script>
+	<script src="./js/reviews.js"></script>
+	<script src="./js/Swiper.js"></script>
+</body>
+
+</html>

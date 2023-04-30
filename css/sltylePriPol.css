@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Days One';
+    src: url('DaysOne-Regular.eot');
+    src: local('Days One'), local('DaysOne-Regular'),
+      url('DaysOne-Regular.eot?#iefix') format('embedded-opentype'),
+      url('DaysOne-Regular.woff2') format('woff2'),
+      url('DaysOne-Regular.woff') format('woff'),
+      url('DaysOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/*privacy policy*/
+
+.mainPageLinkBox {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 75%;
+}
+
+.mainPageLink {
+
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.mainPageLink img {
+    padding-top: 1.5%;
+}
+
+.mainPageLink p {
+    display: block;
+    padding-left: 10px;
+    font-family: 'Jura';
+    font-size: 20px;
+}
+
+
+.priPolicyTextBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    width: 75vw;
+    height: auto;
+    color: white;
+    background: linear-gradient(144.89deg, rgba(10, 10, 18, 0.26) 0%, rgba(58, 77, 105, 0.26) 42.05%, rgba(233, 210, 183, 0.26) 100%), rgba(10, 10, 18, 0.37);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.priPolicyText {
+    width: 70%;
+    padding-bottom: 40px;
+    padding-top: 48px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.priPolicyText p {
+    padding-bottom: 42px;
+}
+
+#contactsPriPol {
+    padding-bottom: 0;
+}
+
+.priPolicyText h4 {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.priPolicyTextBox h1 {
+    padding-top: 40px;
+    display: block;
+    font-family: 'Days One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    width: 95%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/*media for privacy policy*/
+
+@media (max-width: 768px) {
+    .mainPageLinkBox {
+        width: 95%;
+    }
+
+    .priPolicyTextBox {
+        width: 95%;
+    }
+
+    .priPolicyText {
+        width: 90%;
+    }
+}
+
+@media (max-width: 465px) {
+
+    .priPolicyText,
+    .priPolicyTextBox h1 {
+        width: 99%;
+    }
+
+    .mainPageLink img {
+        padding-top: 0.5%;
+    }
+
+    .mainPageLink p {
+        font-size: 16px;
+    }
+
+    .priPolicyTextBox h1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .priPolicyTextBox p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .priPolicyTextBox h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

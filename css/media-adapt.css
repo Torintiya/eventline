@@ -1,0 +1,534 @@
+/* -------------------------------------------------Кулибин--------------------------------------------------------- */
+@media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header_body {
+        height: 50px;
+    }
+
+    .header_logo {
+        flex: 0 0 90px;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before,
+    .header_burger:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before {
+        top: 0;
+    }
+
+    .header_burger:after {
+        bottom: 0;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -200%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background: rgba(10, 10, 18, 1);
+        padding: 70px 10px 20px 10px;
+        max-height: 200px;
+    }
+
+    .header_menu.active {
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_list li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .about_content {
+        margin: 0 auto;
+        font-size: 20px;
+        top: 0;
+        left: 0;
+    }
+
+    .intro_title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about_box {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+
+    .about_img {
+        display: none;
+    }
+
+    .about_wrap {
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+    }
+
+    .about_content {
+        background: none;
+    }
+
+    .header_body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_text {
+        padding-bottom: 50px;
+    }
+    .header{
+        min-height: 55px;
+    }
+    .header_body{
+        height: 26px;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .intro_title {
+        font-size: 16px;
+        letter-spacing: 1, 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .title,
+    .title_advantages {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .about_content {
+        min-width: 320px;
+    }
+}
+
+/*---------------------------------------------Кулибин end---------------------------------------------------------*/
+/*----------------------------------------------Вика start---------------------------------------------------------*/
+
+@media (max-width: 1175px) {
+    .body {
+        background-image: url(img/desktop_clouds_main_page.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .foto_left_1 {
+        display: none;
+    }
+
+    .foto_top {
+        width: 50%;
+        display: flex;
+        margin-right: 14px;
+    }
+
+    .foto_bottom {
+        width: 100%;
+        display: flex;
+    }
+
+    .foto_small {
+        width: 50%;
+    }
+
+    .foto_left_2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto_adaptiv_1 {
+        width: 100%;
+    }
+
+    .foto_bigger:hover {
+        transform: scale(1);
+    }
+
+    .foto_small:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap_portfolio {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .content_item {
+        width: 30%;
+    }
+
+    .foto_left_1 {
+        display: none;
+    }
+
+    .portfolio {
+        display: none;
+    }
+
+    .title {
+        padding-bottom: 20px;
+    }
+
+    .mySwiper {
+        display: block;
+        width: 100%;
+    }
+
+    .slide_link {
+        display: block;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .img_slide {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .link {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 667px) {
+    .content_wrap {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .content_block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .content_item {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content_block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .content_block_bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .content_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content_text {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 12px;
+        font-weight: 500;
+    }
+
+    .content_item {
+        margin-bottom: 16px;
+    }
+
+    .content_wrap {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .content_block {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 40px; */
+    }
+
+    .content_block_bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+/*----------------------------------------------Вика END---------------------------------------------------------*/
+/*-----------------------------------------------------ИльяSTART------------------------------------------ */
+@media (any-pointer: coarse) {
+    /* .window-form {
+      height: 100vh;
+    } */
+    .QA-forma {
+        width: 100%;
+    }
+
+    .formTitle h1 {
+        font-size: 20px;
+    }
+
+    .formTitle h2 {
+        font-size: 14px;
+    }
+
+    .QA-forma label,
+    #acceptBtnForm {
+        font-size: 15px;
+    }
+
+    .polConfDiv {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .QA-forma label,
+    #acceptBtnForm {
+        font-size: 15px;
+    }
+
+    .polConfDiv {
+        font-size: 13px;
+    }
+}
+
+/*-----------------------------------------------------ИльяEND------------------------------------------ */
+
+/*-----------------------------------------------------MAXIMSTART------------------------------------------*/
+@media (max-width: 1050px) {
+    .container-service {
+        max-width: 660px;
+    }
+
+    .swiper_position {
+        max-width: 600px;
+    }
+
+    .reviews_box {
+        max-width: 342px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service__links {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+    .container-service {
+        max-width: 600px;
+    }
+
+    .swiper_position {
+        max-width: 315px;
+    }
+
+    .reviews_box {
+        max-width: 212px;
+    }
+
+    .swiper_box {
+        margin-left: 12px;
+    }
+
+    .reviews_window {
+        backdrop-filter: blur(2px) contrast(9%);
+        -webkit-backdrop-filter: blur(2px) contrast(60%);
+    }
+
+    .formBack {
+        background-color: rgba(128, 128, 128, 0.1);
+
+    }
+}
+
+@media (max-width: 620px) {
+    .service_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 420px;
+    }
+
+    .service_items {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .service_picture {
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .service_reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .service_next{
+        justify-content: center;
+        max-width: 220px;
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service_box {
+        max-width: 300px;
+        padding: 0 15px;
+    }
+
+    @media (max-width: 490px) {
+        .formTitle h1 {
+            font-size: 20px;
+            max-width: 252px;
+            margin: 0 auto;
+        }
+
+        .form-box {
+            width: 100%;
+        }
+
+        .formTitle h2 {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+/*-----------------------------------------------------MAXIMEND------------------------------------------*/
+/*-----------------------------------------------------GalinaStart------------------------------------------*/
+
+
+@media (max-width: 1180px) {
+    .footer {
+        padding: 40px 20px;
+    }
+    .vk_img {
+        padding-right: 5px;
+    }
+    .telegram_img {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 670px) {
+
+
+    .footer__block {
+        height: auto;
+        padding-bottom: 4px;
+    }
+
+    .footer___text {
+        font-size: 14px;
+    }
+
+    .footer___img {
+        width: 10px;
+        height: auto;
+    }
+
+    .footer___img_sn {
+        width: 20px;
+        height: auto;
+    }
+
+    .logo {
+        padding-bottom: 60px;
+    }
+
+    .policy {
+        left: 20px;
+        line-height: 20px;
+        width: 300px;
+    }
+
+}
+
+/*-----------------------------------------------------GalinaEND------------------------------------------*/
